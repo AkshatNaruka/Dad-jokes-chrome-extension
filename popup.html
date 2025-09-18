@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Normie Jokes</title>
+    <title>Funny Jokes & More</title>
 </head>
 <body>
-    <p id="jokeElement">Loading...</p>
+    <div class="container">
+        <header>
+            <h1>🎭 Funny Jokes & More</h1>
+        </header>
+        
+        <div class="category-tabs">
+            <button class="tab-button active" data-category="dad">Dad Jokes</button>
+            <button class="tab-button" data-category="pickup">Pickup Lines</button>
+            <button class="tab-button" data-category="puns">Puns</button>
+            <button class="tab-button" data-category="programming">Programming</button>
+            <button class="tab-button" data-category="oneliners">One-Liners</button>
+        </div>
+
+        <div class="joke-container">
+            <div id="jokeElement" class="joke-text">Loading your daily dose of humor...</div>
+            <div class="loading" id="loadingElement" style="display: none;">
+                <div class="spinner"></div>
+                <span>Getting a fresh joke...</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="newJokeBtn" class="control-button">
+                🔄 New Joke
+            </button>
+            <button id="shareBtn" class="control-button">
+                📱 Share
+            </button>
+        </div>
+
+        <footer>
+            <p class="footer-text">Made with ❤️ for your daily laughs</p>
+        </footer>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
